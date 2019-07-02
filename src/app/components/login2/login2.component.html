@@ -1,0 +1,7 @@
+<h1>login 2</h1>
+<form #loginForm="ngForm">
+        <input type="text" [(ngModel)]="userName" name="username" required minlength="2" maxlength="10">
+        <input type="number" [(ngModel)]="password" name="password" required>
+        <button type="submit" [disabled]="loginForm.invalid" (click)="checkUser()">Enviar</button>
+
+</form>

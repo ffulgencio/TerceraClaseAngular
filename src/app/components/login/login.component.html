@@ -1,0 +1,12 @@
+<h1>Login</h1>
+<form #myForm="ngForm">
+    <input type="text" name="user" [(ngModel)]="usuario.username" minlength="5" required>
+    <input type="password" name="pass" [(ngModel)]="usuario.password" required>
+    
+    <button type="button" (click)="onClick()" [disabled]="myForm.invalid">Enviar</button>
+
+</form>
+
+
+<label for="">{{ usuario.username }}</label>
+
